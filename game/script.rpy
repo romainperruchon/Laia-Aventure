@@ -22,6 +22,21 @@ image bg foret:
     fit "cover"
     xalign 0.5
     yalign 0.5
+image bg sentier_fleurs:
+    "images/sentier_fleurs.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg sentier_fleurs2:
+    "images/sentier_fleurs2.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg sentier_fleurs_floralie:
+    "images/sentier_fleurs_floralie.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 image bg foret_fleurs      = Solid("#2a3a1a")
 image bg foret_champignons = Solid("#1e2e10")
 image bg pont              = Solid("#5c4a2a")

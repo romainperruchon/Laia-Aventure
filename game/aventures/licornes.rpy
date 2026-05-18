@@ -169,10 +169,15 @@ label foret_enchantee:
 
 label chemin_fleurs:
 
-    scene bg foret_fleurs with dissolve
+    scene bg sentier_fleurs with dissolve
 
     "Le sentier fleuri sentait bon la vanille et le miel. Les fleurs semblaient s'incliner sur ton passage, comme pour te saluer."
+
+    scene bg sentier_fleurs2 with dissolve
+
     "Soudain, une petite lumière rose vint tourbillonner autour de toi."
+
+    scene bg sentier_fleurs_floralie with dissolve
 
     fee_floralie "Bonjour, voyageur(se) ! Je suis {b}Floralie{/b}, la fée des fleurs. 🌸"
     fee_floralie "Tu as l'air bien pressé(e)... Tu vas vers la tour de Maléfra, n'est-ce pas ?"
@@ -188,6 +193,8 @@ label chemin_fleurs:
     joueur "Merci beaucoup, Floralie !"
 
     fee_floralie "Fais vite ! Et méfie-toi de Grok le Troll... il garde le pont. Mais il adore les jolies choses !"
+
+    scene bg sentier_fleurs2 with dissolve
 
     "Floralie disparut parmi les fleurs, et tu continuais ton chemin, la fleur magique précieusement rangée dans ta poche."
 
