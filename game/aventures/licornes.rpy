@@ -244,13 +244,17 @@ label chemin_champignons:
 
 label pont_du_troll:
 
-    scene bg pont with dissolve
+    scene bg troll dort pont with dissolve
 
     "Après avoir traversé la forêt, tu arrivais devant un vieux pont de pierre enjambant une rivière bouillonnante."
     "Et là, assis en travers du pont comme s'il faisait une sieste, se trouvait le plus gros troll que tu aies jamais vu !"
     "Il avait une peau verte, des oreilles comme des champignons, et des dents en or qui brillaient quand il souriait."
 
+    scene bg troll debout pont with dissolve
+
     troll_grok "HALT ! Personne ne passe sur le pont de {b}GROK{/b} sans payer le péage !"
+
+    scene bg troll with dissolve
 
     joueur "Quel péage ? Je n'ai pas d'argent..."
 
@@ -498,10 +502,13 @@ label entree_grande_porte:
 
 label escalier_sommet:
 
-    scene bg sommet with dissolve
+    scene bg escalier with dissolve
 
-    "Tu montas l'escalier en colimaçon. À chaque étage, des fioles colorées, des grimoires et des cristaux remplissaient les étagères."
+    "Tu montas l'escalier. À chaque étage, des fioles colorées, des grimoires et des cristaux remplissaient les étagères."
     "Au dernier étage, la porte était grande ouverte."
+
+    scene bg pierre with dissolve
+
     "Et là, sur un piédestal de marbre noir..."
     "La {b}{color=#FFD700}Pierre de Lumière{/color}{/b} ! 💎"
     "Elle brillait de mille feux, pulsant comme un cœur vivant. Même dans cette tour sinistre, elle était magnifique."
@@ -577,7 +584,7 @@ label pierre_et_courir:
 
 label porte_etoile:
 
-    scene bg tour_int with dissolve
+    scene bg porte doree with dissolve
 
     if "Clé Dorée ✨" in inventaire:
         "Tu tiras sur la poignée... verrouillée. Mais en fouillant dans ton sac, tu trouvas la Clé Dorée !"
@@ -609,7 +616,7 @@ label porte_etoile:
 
 label chambre_etoile_avec_cle:
 
-    scene bg tour_int with dissolve
+    scene bg salle licorne with dissolve
 
     "Derrière la porte se trouvait une petite pièce ronde joliment décorée... et au milieu, attachée par des chaînes de fumée violette, une magnifique licorne blanche !"
 
@@ -627,6 +634,8 @@ label chambre_etoile_avec_cle:
         $ inventaire.remove("Clé Dorée ✨")
         "Tu posas la Clé Dorée sur les chaînes. Elles se brisèrent dans un nuage de fumée violette !"
 
+        scene bg salle licorne with dissolve
+
         licorne "Je suis libre ! Oh merci, [prenom] ! Je vais t'aider !"
 
         $ etoile_libre = True
@@ -641,6 +650,8 @@ label chambre_etoile_avec_cle:
 
         $ inventaire.remove("Cristal de Céleste 💎")
         $ etoile_libre = True
+
+        scene bg salle licorne with dissolve
 
         licorne "La magie dorée de Céleste ! Elle brise tous les sortilèges de Maléfra !"
 

@@ -39,11 +39,31 @@ image bg sentier_fleurs_floralie:
     yalign 0.5
 image bg foret_fleurs      = Solid("#2a3a1a")
 image bg foret_champignons = Solid("#1e2e10")
-image bg pont              = Solid("#5c4a2a")
-image bg tour_ext          = Solid("#1a0a2a")
-image bg tour_int          = Solid("#0f0a1a")
-image bg laboratoire       = Solid("#0a0f1a")
-image bg sommet            = Solid("#1a0a2a")
+image bg tour_ext:
+    "images/tour_ext.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg tour_int:
+    "images/tour_int.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg laboratoire:
+    "images/laboratoire.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg escalier:
+    "images/escalier.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg porte doree:
+    "images/porte_doree.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 image bg ciel_victoire     = Solid("#ffa040")
 image bg noir              = Solid("#000000")
 image bg prairie:
@@ -53,6 +73,36 @@ image bg prairie:
     yalign 0.5
 image bg pierre:
     "images/pierre_lumiere.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg troll dort pont:
+    "images/troll_dort_pont.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg troll debout pont:
+    "images/troll_debout_pont.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg troll:
+    "images/troll.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg salle licorne:
+    "images/salle_licorne.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg licorne:
+    "images/licorne.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg sommet:
+    "images/sommet.png"
     fit "cover"
     xalign 0.5
     yalign 0.5
