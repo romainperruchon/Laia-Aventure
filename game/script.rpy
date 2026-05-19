@@ -38,7 +38,11 @@ image bg sentier_fleurs_floralie:
     xalign 0.5
     yalign 0.5
 image bg foret_fleurs      = Solid("#2a3a1a")
-image bg foret_champignons = Solid("#1e2e10")
+image bg foret_champignons:
+    "images/chemin_champignons.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 image bg tour_ext:
     "images/tour_ext.png"
     fit "cover"
@@ -103,6 +107,26 @@ image bg licorne:
     yalign 0.5
 image bg sommet:
     "images/sommet.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg gnome dort:
+    "images/gnome_dort.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg gnome:
+    "images/gnome.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg prairie licorne:
+    "images/prairie_licorne.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg lumina:
+    "images/lumina.png"
     fit "cover"
     xalign 0.5
     yalign 0.5

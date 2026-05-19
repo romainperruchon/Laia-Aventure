@@ -209,12 +209,17 @@ label chemin_champignons:
 
     "Les champignons géants formaient comme un tunnel coloré. Certains étaient si grands que tu pouvais te tenir dessous !"
     "Derrière le plus gros champignon, quelqu'un ronflait très fort..."
+
+    scene bg gnome dort with dissolve
+
     "Tu t'approchais doucement et découvrais un tout petit gnome, profondément endormi, un grand livre de cartes ouvert sur le visage."
-    "BOUM ! Tu trébuças sur une racine et tombas dans les feuilles !"
+    "BOUM ! Tu trébuchas sur une racine et tombas dans les feuilles !"
 
     gnome_pip "Hein ?! Quoi ! Qui est là ?!"
 
     "Le gnome sauta sur ses pieds, l'air tout ébouriffé."
+
+    scene bg gnome with dissolve
 
     gnome_pip "Oh ! Un enfant ! Tu m'as fait une de ces peurs ! Je m'appelle {b}Pip{/b}. 🍄"
 
@@ -740,13 +745,17 @@ label sommet_avec_etoile:
 
 label entree_fenetre:
 
-    scene bg laboratoire with dissolve
-
     "Tu trouvas une liane solide sur le côté de la tour et commençais à grimper."
     "C'était haut... très haut... mais tu ne lâchas pas !"
     "Tu atteignis enfin une fenêtre entrouverte au milieu de la tour et te glissas à l'intérieur."
-    "La pièce était un laboratoire magique : des chaudrons bouillonnants, des étagères de fioles, des livres de sorts qui volaient tout seuls..."
-    "Et dans le recoin le plus sombre, attachée par des chaînes de fumée violette... une licorne !"
+
+    scene bg laboratoire with dissolve
+
+    "La pièce était un laboratoire magique : des chaudrons bouillonnants, des étagères de fioles, des livres de sorts qui volaient tout seuls... une porte mène à une autre salle, tu y vas"
+
+    scene bg salle licorne
+
+    "Tu arrives dans une salle ronde et tu vois, attachée par des chaînes de fumée violette... une licorne !"
 
     licorne "Oh ! Attention, ne touche à rien... tu ne sais pas ce que ces potions peuvent faire ! 🦄"
 
@@ -913,12 +922,16 @@ label fin_parfaite:
 
     joueur "Pour toujours et à jamais !"
 
-    scene bg prairie with dissolve
+    scene bg prairie licorne with dissolve
 
     "Vous atterrîtes dans une grande prairie fleurie au cœur d'Élysia."
-    "Toutes les licornes du royaume vous entourèrent, brillant de tous leurs feux."
+    "Toutes les licornes du royaume vous galopent libres, brillant de tous leurs feux."
+
+    scene bg prairie with dissolve
 
     fee_celeste "Tu l'as fait, [prenom] ! Tu as sauvé le royaume et tu as libéré Étoile ! C'est plus que ce qu'on espérait ! 🌟"
+
+    scene bg lumina with dissolve
 
     "La Reine des Licornes, Lumina, s'avança majestueusement et toucha ton front de sa corne dorée."
 
