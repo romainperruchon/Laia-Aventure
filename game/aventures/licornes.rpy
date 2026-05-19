@@ -953,6 +953,8 @@ label fin_bonne:
     "Dans une clairière ensoleillée, tu t'arrêtais enfin et regardas la Pierre."
     "Elle brillait si fort qu'on aurait dit une petite étoile dans tes mains."
 
+    scene bg prairie with dissolve
+
     fee_celeste "Tu l'as fait, [prenom] ! Tu l'as vraiment fait ! ✨"
 
     fee_celeste "La Pierre de Lumière ! Les licornes vont retrouver leur magie ! Le royaume est sauvé !"
@@ -963,6 +965,8 @@ label fin_bonne:
 
     fee_celeste "Je sais, [prenom]. Mais grâce à toi, le royaume est sauvé ! Étoile sera libérée très bientôt, maintenant que la Pierre est de retour."
     fee_celeste "Tu es un(e) vrai(e) héros/héroïne, [prenom] !"
+
+    scene bg lumina with dissolve
 
     "La Reine des Licornes, Lumina, descendit du ciel et s'inclina devant toi."
     "Elle posa délicatement sa corne sur ton front."
