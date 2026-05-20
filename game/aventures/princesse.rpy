@@ -261,6 +261,9 @@ label acte2_foret_des_ombres:
 
     "Tu avançais prudemment entre les arbres. Chaque branche craquait sous tes pas\ncomme si la forêt elle-même cherchait à te trahir."
     "Les yeux jaunes dans les buissons se multiplièrent."
+
+    scene bg gobelins with dissolve
+
     "Puis trois formes trapues et verdâtres bondirent sur le sentier,\nbrandissant des gourdins cloutés et ricanant entre leurs dents pointues."
 
     gobelin "GRK ! Personne passe ! Ignar dit : personne passe la forêt !"
@@ -637,7 +640,7 @@ label acte3_secourir_villageois:
 
 label acte3_fin:
 
-    scene bg foret_ombres with dissolve
+    scene bg noir with dissolve
 
     "Tu quittais le village derrière toi, les jambes lourdes et le cœur battant."
     "Devant, le chemin montait vers le Mont Cramoisi,"

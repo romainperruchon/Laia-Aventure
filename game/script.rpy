@@ -141,7 +141,11 @@ image bg throne_room:
     xalign 0.5
     yalign 0.5
 image bg village           = Solid("#5a3a1a")
-image bg village_feu       = Solid("#8a2800")
+image bg village_feu:
+    "images/village_feu.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 image bg gorges_sauvages:
     "images/gorges_sauvages.png"
     fit "cover"
@@ -181,6 +185,11 @@ image bg bouclier:
     yalign 0.5
 image bg solene:
     "images/solene.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg gobelins:
+    "images/gobelins.png"
     fit "cover"
     xalign 0.5
     yalign 0.5
