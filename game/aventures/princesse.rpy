@@ -45,7 +45,7 @@ label intro_princesse:
     $ p2_villageois  = False
     $ p2_dragon_mort = False
 
-    scene bg sky with dissolve
+    scene bg val_doree with dissolve
 
     "Il était une fois un royaume prospère nommé {b}Val-Doré{/b}."
     "Ses champs dorés s'étendaient à perte de vue, ses rivières chantaient,\net ses habitants vivaient en paix depuis des générations."
@@ -56,9 +56,12 @@ label intro_princesse:
     "Au cœur du royaume se dressait le fier château du {b}Roi Aldric{/b},\ndont la tour la plus haute touchait presque les nuages."
     "Et dans cette tour vivait la {b}Princesse Arya{/b},\ncurieuse, malicieuse, et plus courageuse qu'on ne le disait."
 
-    scene bg foret_sombre with dissolve
+    scene bg foret_ombres with dissolve
 
     "Mais à l'est, par-delà la Forêt des Ombres,\ndans une tanière creusée au flanc du Mont Cramoisi..."
+
+    scene bg ignar with dissolve
+
     "...dormait {b}Ignar{/b}, le Dragon Rouge."
     "Ses écailles brillaient comme des braises.\nSon souffle pouvait réduire un village en cendres en trois battements d'ailes."
     "Cela faisait dix ans qu'il dormait. Mais cette nuit-là... il s'était réveillé."
@@ -72,13 +75,16 @@ label intro_princesse:
 
 label acte1_appel_du_roi:
 
-    scene bg throne_room with dissolve
+    scene bg messager_royal with dissolve
 
     "Le lendemain matin, un messager royal frappait à ta porte avant même le lever du soleil."
 
     messager "Au nom du Roi Aldric de Val-Doré, je te convoque d'urgence au château !"
 
     "Tu n'avais jamais reçu un tel honneur. Ni une telle frayeur."
+
+    scene bg throne_room with dissolve
+
     "Quand tu arrivais dans la grande salle du trône, le roi était debout devant sa chaise,\nle visage gris comme la pierre."
 
     roi_aldric "Enfin ! {b}[prenom]{/b}... ils m'ont dit que tu étais courageux(se). J'espère que c'est vrai."
@@ -129,11 +135,14 @@ label acte1_appel_du_roi:
 
 label acte1_route_nord:
 
-    scene bg grotte with dissolve
+    scene bg gorges_sauvages with dissolve
 
     "Tu pris la route du Nord au galop."
     "Les Gorges Sauvages étaient effectivement impressionnantes :\ndes parois de roche noire s'élevaient de chaque côté du sentier,\ncomme deux géants endormis."
     "Au fond d'une alcôve, tu remarquais quelque chose qui brillait faiblement..."
+
+    scene bg bouclier with dissolve
+
     "Un vieux {b}bouclier{/b} incrusté d'une gemme bleue, appuyé contre la paroi rocheuse.\nPorté par qui ? Depuis quand ? Impossible à dire."
 
     "Sous le bouclier, gravé dans la pierre, on lisait :\n{i}\"Celui qui protège les autres sera lui-même protégé.\"}{/i}"
@@ -148,6 +157,8 @@ label acte1_route_nord:
     "À l'horizon, les premières silhouettes des arbres de la Forêt des Ombres se découpaient sur le ciel."
 
     "Soudain, une voix t'interpella depuis un rocher."
+
+    scene bg solene with dissolve
 
     solene "Halte ! Qui va là ?"
 
@@ -217,7 +228,7 @@ label acte1_route_est:
 
 label acte1_fin:
 
-    scene bg foret_sombre with dissolve
+    scene bg foret_ombres with dissolve
 
     "La lisière de la Forêt des Ombres se dressait devant toi comme un mur de ténèbres."
     "Les arbres étaient si grands et si serrés que leurs branches formaient\nun toit opaque au-dessus du sentier."
@@ -246,7 +257,7 @@ label acte1_fin:
 
 label acte2_foret_des_ombres:
 
-    scene bg foret_sombre with dissolve
+    scene bg foret_ombres with dissolve
 
     "Tu avançais prudemment entre les arbres. Chaque branche craquait sous tes pas\ncomme si la forêt elle-même cherchait à te trahir."
     "Les yeux jaunes dans les buissons se multiplièrent."
@@ -422,7 +433,7 @@ label acte2_intimidation:
 
 label acte2_apres_gobelins:
 
-    scene bg foret_sombre with dissolve
+    scene bg foret_ombres with dissolve
 
     "Les gobelins franchis (ou semés), tu continuais à travers la forêt."
     "Plus tu avançais, plus les arbres devenaient noirs et tordus,\nleurs branches noueuses s'entrelaçant comme des doigts crispés."
@@ -626,7 +637,7 @@ label acte3_secourir_villageois:
 
 label acte3_fin:
 
-    scene bg foret_sombre with dissolve
+    scene bg foret_ombres with dissolve
 
     "Tu quittais le village derrière toi, les jambes lourdes et le cœur battant."
     "Devant, le chemin montait vers le Mont Cramoisi,"

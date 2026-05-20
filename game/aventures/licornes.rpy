@@ -371,10 +371,10 @@ label troll_devinette:
     "🧩 {b}Quelle devinette vas-tu lui poser ?{/b}"
 
     menu:
-        "🌙  « J'ai des milliers de dents mais je ne mords jamais. Qu'est-ce que c'est ? »":
+        "🌙  « J'ai des beaucoup de dents mais je ne mords jamais. Qu'est-ce que c'est ? »":
             jump troll_devinette_peigne
 
-        "🌈  « Plus tu en enlèves, plus elle grandit. Qu'est-ce que c'est ? »":
+        "🌈  « Plus tu en enlèves, plus il grandit. Qu'est-ce que c'est ? »":
             jump troll_devinette_trou
 
 
@@ -908,7 +908,7 @@ label fin_parfaite:
 
     $ pierre_obtenue = True
 
-    scene bg ciel_victoire with dissolve
+    scene bg ciel victoire with dissolve
 
     "Étoile volait haut, très haut dans le ciel, te portant sur son dos."
     "La Pierre de Lumière brillait entre tes mains, illuminant les nuages de mille couleurs. 💎"

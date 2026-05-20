@@ -7,7 +7,7 @@
 ## IMAGES DE FOND (couleurs unies, pas d'image requise)
 ## ============================================================
 
-image bg menu:
+image bg_menu:
     "images/menu_aventure.png"
     fit "cover"
     xalign 0.5
@@ -37,7 +37,6 @@ image bg sentier_fleurs_floralie:
     fit "cover"
     xalign 0.5
     yalign 0.5
-image bg foret_fleurs      = Solid("#2a3a1a")
 image bg foret_champignons:
     "images/chemin_champignons.png"
     fit "cover"
@@ -68,7 +67,11 @@ image bg porte doree:
     fit "cover"
     xalign 0.5
     yalign 0.5
-image bg ciel_victoire     = Solid("#ffa040")
+image bg ciel victoire:
+    "images/ciel_victoire.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 image bg noir              = Solid("#000000")
 image bg prairie:
     "images/celeste_prairie.png"
@@ -121,7 +124,7 @@ image bg gnome:
     xalign 0.5
     yalign 0.5
 image bg prairie licorne:
-    "images/prairie_licorne.png"
+    "images/prairie_licornes.png"
     fit "cover"
     xalign 0.5
     yalign 0.5
@@ -132,15 +135,55 @@ image bg lumina:
     yalign 0.5
 
 ## Fonds — Aventure 2 : Protéger la princesse
-image bg throne_room       = Solid("#3a2a10")
-image bg foret_sombre      = Solid("#0f1a0a")
+image bg throne_room:
+    "images/throne_room.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 image bg village           = Solid("#5a3a1a")
 image bg village_feu       = Solid("#8a2800")
-image bg grotte            = Solid("#1a0a0a")
+image bg gorges_sauvages:
+    "images/gorges_sauvages.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 image bg taniere_dragon    = Solid("#2a0a0a")
 image bg ciel_triomphe     = Solid("#e87020")
-image bg chateau_ext       = Solid("#2a3050")
-
+image bg chateau_ext:
+    "images/chateau_ext.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg foret_ombres:
+    "images/foret_ombres.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg ignar:
+    "images/ignar.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg val_doree:
+    "images/val_doree.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg messager_royal:
+    "images/messager_royal.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg bouclier:
+    "images/bouclier.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg solene:
+    "images/solene.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 
 ## ============================================================
 ## VARIABLES DU JEU
@@ -214,7 +257,7 @@ label start:
 
     if choix_start == "aventures":
 
-        scene bg menu with dissolve
+        scene bg_menu with dissolve
 
         $ choix_av = renpy.call_screen("aventures_screen")
         if choix_av == "licornes":
