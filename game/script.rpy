@@ -140,7 +140,11 @@ image bg throne_room:
     fit "cover"
     xalign 0.5
     yalign 0.5
-image bg village           = Solid("#5a3a1a")
+image bg village:
+    "images/village.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
 image bg village_feu:
     "images/village_feu.png"
     fit "cover"
@@ -185,6 +189,11 @@ image bg bouclier:
     yalign 0.5
 image bg solene:
     "images/solene.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg solene_preval:
+    "images/solene_preval.png"
     fit "cover"
     xalign 0.5
     yalign 0.5
@@ -365,7 +374,7 @@ screen aventures_screen():
     zorder 200
     modal True
 
-    add "bg menu"
+    add "bg_menu"
 
     ## Titre
     frame:
@@ -402,7 +411,7 @@ screen aventures_screen():
 
             text "🦄" size 140 xalign 0.5
             text "Sauver le Royaume\ndes Licornes" size 40 bold True color "#FF85C2" outlines [(2, "#000000", 0, 0)] xalign 0.5 text_align 0.5
-            text "Aide les licornes d'Élysia\nà retrouver leur magie !" size 27 color "#FFE4F5" xalign 0.5 text_align 0.5
+            text "Aide les licornes d'Élysia\nà retrouver leur magie !" size 27 bold True color "#FFE4F5" outlines [(2, "#000000", 0, 0)] xalign 0.5 text_align 0.5
             frame:
                 xalign 0.5
                 background "#AA3388AA"
@@ -434,7 +443,7 @@ screen aventures_screen():
 
             text "👸" size 140 xalign 0.5
             text "Protéger\nla Princesse" size 40 bold True color "#FFB830" outlines [(2, "#000000", 0, 0)] xalign 0.5 text_align 0.5
-            text "Défends le château royal\ncontre le dragon Ignar !" size 27 color "#FFFACD" xalign 0.5 text_align 0.5
+            text "Défends le château royal\ncontre le dragon Ignar !" size 27 bold True color "#FFFACD" outlines [(2, "#000000", 0, 0)] xalign 0.5 text_align 0.5
             frame:
                 xalign 0.5
                 background "#AA7700AA"
@@ -450,7 +459,7 @@ screen trophees_screen():
     zorder 200
     modal True
 
-    add "bg menu"
+    add "bg_menu"
 
     ## Bouton retour
     button:
@@ -564,7 +573,7 @@ screen choisir_personnage_screen():
     zorder 200
     modal True
 
-    add "bg menu"
+    add "bg_menu"
 
     ## Titre
     frame:

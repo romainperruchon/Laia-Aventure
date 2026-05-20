@@ -654,7 +654,7 @@ screen file_slots(title):
                         text FileSaveName(slot):
                             style "slot_name_text"
 
-                        key "save_delete" action FileDelete(slot)
+                        key "K_DELETE" action FileDelete(slot)
 
             ## Boutons pour accéder aux autres pages.
             vbox:
@@ -669,7 +669,7 @@ screen file_slots(title):
                     spacing gui.page_spacing
 
                     textbutton _("<") action FilePagePrevious()
-                    key "save_page_prev" action FilePagePrevious()
+                    key "K_LEFT" action FilePagePrevious()
 
                     if config.has_autosave:
                         textbutton _("{#auto_page}A") action FilePage("auto")
@@ -682,7 +682,7 @@ screen file_slots(title):
                         textbutton "[page]" action FilePage(page)
 
                     textbutton _(">") action FilePageNext()
-                    key "save_page_next" action FilePageNext()
+                    key "K_RIGHT" action FilePageNext()
 
                 if config.has_sync:
                     if CurrentScreenName() == "save":

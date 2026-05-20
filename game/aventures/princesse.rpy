@@ -193,6 +193,8 @@ label acte1_route_est:
     "L'aube à peine levée, les coqs chantaient encore. Tout semblait calme... pour l'instant."
     "Dans le deuxième village, tu aperçus une silhouette en armure bleue devant la forge."
 
+    scene bg solene_preval with dissolve
+
     solene "Toi ! C'est toi [prenom] dont on m'a parlé ?"
 
     joueur "C'est moi. Je cherche la princesse Arya, capturée par Ignar."
