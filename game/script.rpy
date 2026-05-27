@@ -67,8 +67,13 @@ image bg porte doree:
     fit "cover"
     xalign 0.5
     yalign 0.5
-image bg ciel victoire:
-    "images/ciel_victoire.png"
+image bg ciel victoire laia:
+    "images/ciel_victoire_laia.png"
+    fit "cover"
+    xalign 0.5
+    yalign 0.5
+image bg ciel victoire kael:
+    "images/ciel_victoire_kael.png"
     fit "cover"
     xalign 0.5
     yalign 0.5
@@ -279,9 +284,9 @@ label start:
 
         $ choix_av = renpy.call_screen("aventures_screen")
         if choix_av == "licornes":
-            jump choisir_personnage
+            jump choisir_personnage_licornes
         elif choix_av == "princesse":
-            jump intro_princesse
+            jump choisir_personnage_princesse
         else:
             jump start
     else:
@@ -705,7 +710,7 @@ screen choisir_personnage_screen():
 ## CHOIX DU PERSONNAGE
 ## ============================================================
 
-label choisir_personnage:
+label choisir_personnage_licornes:
 
     "Avant de commencer, {b}choisis ton personnage{/b} !"
 
@@ -714,6 +719,14 @@ label choisir_personnage:
     "[prenom], c'est parti pour l'aventure ! ✨"
     jump intro_licornes
 
+label choisir_personnage_princesse:
+
+    "Avant de commencer, {b}choisis ton personnage{/b} !"
+
+    $ choix = renpy.call_screen("choisir_personnage_screen")
+
+    "[prenom], c'est parti pour l'aventure ! ✨"
+    jump intro_princesse
 
 ## ============================================================
 ## AVENTURE 1 : voir game/aventures/licornes.rpy

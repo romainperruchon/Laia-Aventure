@@ -908,7 +908,10 @@ label fin_parfaite:
 
     $ pierre_obtenue = True
 
-    scene bg ciel victoire with dissolve
+    if [prenom] == "Kaël":
+        scene bg ciel victoire kael with dissolve
+    else:
+        scene bg ciel victoire laia with dissolve
 
     "Étoile volait haut, très haut dans le ciel, te portant sur son dos."
     "La Pierre de Lumière brillait entre tes mains, illuminant les nuages de mille couleurs. 💎"

@@ -248,7 +248,6 @@ label acte1_fin:
         "Tu n'étais clairement pas seul(e) ici."
 
     "Les ombres bougèrent. Des yeux jaunes s'allumèrent entre les troncs."
-    "L'Acte 2 approchait... et avec lui, la première vraie épreuve."
 
     jump acte2_foret_des_ombres
 
@@ -471,7 +470,7 @@ label acte2_fin:
     scene bg village_feu with dissolve
 
     "Tu courais vers le village en flammes, le cœur serré."
-    "L'Acte 3 approchait : le dragon Ignar lui-même t'y attendait peut-être..."
+    "Le dragon Ignar lui-même t'y attendait peut-être..."
 
     jump acte3_village_flammes
 
@@ -654,7 +653,6 @@ label acte3_fin:
         solene "Alors on court."
 
     "L'odeur de soufre devenait de plus en plus forte."
-    "L'Acte 4 approchait : la tanière d'Ignar."
 
     jump acte4_taniere
 
